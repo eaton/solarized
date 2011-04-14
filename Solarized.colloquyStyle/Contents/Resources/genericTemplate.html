@@ -1,0 +1,40 @@
+
+<script type="text/javascript">
+	document.body.addEventListener('DOMNodeInserted', startFadeIfNeeded);
+
+	function startFadeIfNeeded(event) {
+		if( event.target.className.indexOf('envelope') == -1 && event.target.className.indexOf('event') == -1) return;
+		if( ! document.styleSheets[3] ) return;
+
+		var fadeBool = false;
+		var rules = document.styleSheets[3].cssRules;
+		var length = rules.length;
+		for( var i = 0; i < length; i++ ) {
+			var rule = rules[i];
+			if( rule.selectorText.toLowerCase() == ".messagefadein" ) {
+				regex = /content:\s*on/g;
+				fadeBool = regex.test(rule.style.cssText);
+			}
+		}
+
+		if( fadeBool ) {
+			if( fadeElement )
+				fadeElement.style.opacity = null;
+			fadeStep = 0.0;
+			fadeElement = event.target;
+			fadeIn();
+		}
+	}
+
+	var fadeElement;
+	var fadeStep = 0.0;
+	function fadeIn() {
+		if( ! fadeElement || ! fadeElement.style ) return;
+		if( fadeStep < 1.0 ) {
+			fadeElement.style.opacity = fadeStep;
+			setTimeout(fadeIn, 10);
+		} else fadeElement.style.opacity = null;
+		fadeStep += 0.2;
+	}
+</script>
+<div id="contents"></div>
