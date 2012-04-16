@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Solarized (with images)</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>cc.javelin.colloquy.style.solarized</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Solarized (with images)</string>
+	<key>CFBundlePackageType</key>
+	<string>coSt</string>
+	<key>JVStyleOptions</key>
+	<array>
+		<dict>
+			<key>style</key>
+			<string>.member.self { color: %@ !important; }</string>
+			<key>default</key>
+			<string>#a21</string>
+			<key>description</key>
+			<string>Your name</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>style</key>
+			<string>.member { color: %@ !important; }</string>
+			<key>default</key>
+			<string>#f90</string>
+			<key>description</key>
+			<string>Room members</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>style</key>
+			<string>.envelope.highlight { background-color: %@ !important; }</string>
+			<key>default</key>
+			<string>rgba( 0, 0, 0, 0.1 )</string>
+			<key>description</key>
+			<string>Message highlight</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>style</key>
+			<array>
+				<string>.messageFadeIn { content: &quot;off&quot;; }</string>
+				<string>.messageFadeIn { content: &quot;on&quot;; }</string>
+			</array>
+			<key>default</key>
+			<integer>0</integer>
+			<key>description</key>
+			<string>Message fade</string>
+			<key>type</key>
+			<string>list</string>
+			<key>options</key>
+			<array>
+				<string>Off</string>
+				<string>On</string>
+			</array>
+		</dict>
+		<dict>
+			<key>style</key>
+			<array>
+				<string>.timestamp { display: block; }</string>
+				<string>.timestamp { display: none; }</string>
+			</array>
+			<key>default</key>
+			<integer>0</integer>
+			<key>description</key>
+			<string>Timestamp</string>
+			<key>type</key>
+			<string>list</string>
+			<key>options</key>
+			<array>
+				<string>Visible</string>
+				<string>Hidden</string>
+			</array>
+		</dict>
+		<dict>
+			<key>style</key>
+			<array>
+				<string>.envelope { margin-bottom: 1px !important; }</string>
+				<string>.envelope { margin-bottom: 3px !important; }</string>
+				<string>.envelope { margin-bottom: 7px !important; }</string>
+			</array>
+			<key>default</key>
+			<integer>1</integer>
+			<key>description</key>
+			<string>Line spacing</string>
+			<key>type</key>
+			<string>list</string>
+			<key>options</key>
+			<array>
+				<string>Small Gap</string>
+				<string>Normal</string>
+				<string>Large Gap</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

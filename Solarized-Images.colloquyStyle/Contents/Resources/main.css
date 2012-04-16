@@ -143,3 +143,6 @@ a.actionNick	{ color: #657b83; text-decoration:none !important; }	/* color nick 
 .error			{ color: #dc322f; }
 .error:before	{ content: "("; }
 .error:after 	{ content: ")"; }
+
+/* Image embed stuff */
+img	{ max-width: 100px; border: 1px solid #002b36; }

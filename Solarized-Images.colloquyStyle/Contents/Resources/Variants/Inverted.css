@@ -11,12 +11,12 @@
 	--------- ------- -------  
 	base03    #002b36 brblack  
 	base02    #073642 black    
-	base01    #586e75 brgreen  
-	base00    #657b83 bryellow 
+	base01    #93a1a1 brgreen  
+	base00    #839496 bryellow 
 	base0     #839496 brblue   
-	base1     #93a1a1 brcyan   
-	base2     #eee8d5 white    
-	base3     #fdf6e3 brwhite  
+	base1     #586e75 brcyan   
+	base2     #073642 white    
+	base3     #002b36 brwhite  
 	yellow    #b58900 yellow   
 	orange    #cb4b16 brred    
 	red       #dc322f red      
@@ -36,28 +36,16 @@
 */
 
 body {
-	margin: 4px 0 5px 0;
-	color: #657b83;
-	background-color: #fdf6e3;
-	font: 11px "Menlo", "Andale Mono", "Courier", "Courier New", sans-serif;
-	line-height: 1.4em;
+	color: #839496;
+	background-color: #002b36;
 }		
 
-.envelope			{ padding: 1px 5px; }
-.envelope.highlight	{ background-color: #eee8d5; }
-
+.envelope.highlight	{ background-color: #073642; }
 
 .event {
-	color: #93a1a1;						/* default events to display green */
-	text-align: left;
-	padding: 1px 5px;
-	word-wrap: break-word;
-	-khtml-line-break: after-white-space;
-	-khtml-nbsp-mode: space;
+	color: #586e75;						/* default events to display green */
 }
-.event .timestamp	{ color: #93a1a1; }	/* default events to display green */
-.event:before		{ content: "* "; }
-
+.event .timestamp	{ color: #586e75; }	/* default events to display green */
 
 /* ** EVENT COLORING :: START *********************************************************** */
 .banRemoved, .banRemoved .member, .banRemoved .timestamp, 
@@ -75,57 +63,28 @@ body {
 .promotedToOperator, .promotedToOperator .member, .promotedToOperator .timestamp,
 .rejoined, .rejoined .member, .rejoined .timestamp, 
 .topicChanged, .topicChanged .member, .topicChanged .timestamp, 
-.voiced, .voiced .member, .voiced .timestamp { color:#93a1a1 !important; }
+.voiced, .voiced .member, .voiced .timestamp { color:#586e75 !important; }
 
 .kicked, .kicked .member, .kicked .timestamp,	
 .memberKicked, .memberKicked .member, .memberKicked .timestamp,
 .memberParted, .memberParted .member, .memberParted .timestamp,
-.disconnected, .disconnected .member, .disconnected .timestamp { color:#586e75 !important; }
+.disconnected, .disconnected .member, .disconnected .timestamp { color:#93a1a1 !important; }
 
 .awaySet, .awaySet .member, .awaySet .timestamp, 
-.awayRemoved, .awayRemoved .member, .awayRemoved .timestamp { color:#93a1a1 !important; }
+.awayRemoved, .awayRemoved .member, .awayRemoved .timestamp { color:#586e75 !important; }
 /* ** EVENT COLORING :: END ************************************************************* */
 
-.message { margin: 0; }
-			
-.left {
-	float: left;
-	clear: left;
-	height: 100%;
-	margin: 0 5px 0 0;			
-	line-height: 1.4em;
-}
-
 .timestamp {
-	color: #93a1a1;
-	margin: 0 5px 0 0;
-	float: left;
+	color: #586e75;
 }
-.timestamp:before	{ content: "["; }
-.timestamp:after 	{ content: "]"; }
 
-.left > .chanOp:before 		{ content: "@"; }
-.left > .chanVoice:before	{ content: "+"; }
+.left > a.member{ color: #839496;    text-decoration:none !important; }	/* color nick for member */
+.left > a.self	{ color: #2aa198; text-decoration:none !important; }	/* color nick for user (self) */
+a.actionNick	{ color: #839496; text-decoration:none !important; }	/* color nick for actions */
 
-.left > .member:after, 
-.left > .self:after, 
-.left > .chanOp:after, 
-.left > .chanVoice:after { content: ":" ;}
+.action .timestamp, .action .text { color:#839496; }
 
-.action a:before 			{ content: "* ";  }
-.action a.chanOp:before		{ content: "* @"; }
-.action a.chanVoice:before	{ content: "* +"; }
-
-a.member, a.self, a.action { text-decoration:none; }
-a.member:hover, a.self:hover, a.actionNick:hover { border-bottom-width:1px; border-bottom-style:dotted; border-bottom-color:inherit; }
-
-.left > a.member{ color: #657b83;    text-decoration:none !important; }	/* color nick for member */
-.left > a.self	{ color: #859900; text-decoration:none !important; }	/* color nick for user (self) */
-a.actionNick	{ color: #657b83; text-decoration:none !important; }	/* color nick for actions */
-
-.action .timestamp, .action .text { color:#657b83; }
-
-.action .text a			{ text-decoration:none; color:#657b83; }
+.action .text a			{ text-decoration:none; color:#839496; }
 .action .text a:hover	{ border-bottom-width:1px; border-bottom-style:dotted; border-bottom-color:inherit; }
 .action .text a:before	{ content: ""; }
 
@@ -134,12 +93,6 @@ a.actionNick	{ color: #657b83; text-decoration:none !important; }	/* color nick 
 .text a[href^="http"]:hover	{ color:#1DA9EF; border-bottom:1px dotted #268bd2; }
 
 /* fix for nick not appearing in action color if action is highlighted */
-.action a.member, .action a.self, .action a.actionNick { color: #80008A !important; }
-
-
-.text:first-line { margin-left: 0; }
-/* .text .member { color: #353535 !important; font-weight: bold !important; } */
+.action a.member, .action a.self, .action a.actionNick { color: #2aa198 !important; }
 
 .error			{ color: #dc322f; }
-.error:before	{ content: "("; }
-.error:after 	{ content: ")"; }
