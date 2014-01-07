@@ -1,4 +1,4 @@
-/* 		
+/*
 ****************************************************************************************************************
 	Solarized - A Colloquy colored style
 	by Jeff Eaton
@@ -6,31 +6,31 @@
 
 	Solarized color scheme by Ethan Schoonover
 	http://ethanschoonover.com/solarized
-		
-	SOLARIZED HEX     TERMCOL  
-	--------- ------- -------  
-	base03    #002b36 brblack  
-	base02    #073642 black    
-	base01    #93a1a1 brgreen  
-	base00    #839496 bryellow 
-	base0     #839496 brblue   
-	base1     #586e75 brcyan   
-	base2     #073642 white    
-	base3     #002b36 brwhite  
-	yellow    #b58900 yellow   
-	orange    #cb4b16 brred    
-	red       #dc322f red      
-	magenta   #d33682 magenta  
+
+	SOLARIZED HEX     TERMCOL
+	--------- ------- -------
+	base03    #002b36 brblack
+	base02    #073642 black
+	base01    #93a1a1 brgreen
+	base00    #839496 bryellow
+	base0     #839496 brblue
+	base1     #586e75 brcyan
+	base2     #073642 white
+	base3     #002b36 brwhite
+	yellow    #b58900 yellow
+	orange    #cb4b16 brred
+	red       #dc322f red
+	magenta   #d33682 magenta
 	violet    #6c71c4 brmagenta
-	blue      #268bd2 blue     
-	cyan      #2aa198 cyan     
-	green     #859900 green    
+	blue      #268bd2 blue
+	cyan      #2aa198 cyan
+	green     #859900 green
 
 	Based on:
 	mIRCish - An mIRC colored style
 	by Charlie Griefer
 	http://charlie.griefer.com
-	
+
 	(meaning i started off not with a blank slate, but with Charlie's css and xls files.  thanks, Charlie!)
 ****************************************************************************************************************
 */
@@ -38,7 +38,7 @@
 body {
 	color: #839496;
 	background-color: #002b36;
-}		
+}
 
 .envelope.highlight	{ background-color: #073642; }
 
@@ -48,29 +48,27 @@ body {
 .event .timestamp	{ color: #586e75; }	/* default events to display green */
 
 /* ** EVENT COLORING :: START *********************************************************** */
-.banRemoved, .banRemoved .member, .banRemoved .timestamp, 
+.banRemoved, .banRemoved .member, .banRemoved .timestamp,
 .demotedFromOperator, .demotedFromOperator .member, .demotedFromOperator .timestamp,
-.devoiced, .devoiced .member, .devoiced .timestamp, 
-.memberBanned, .memberBanned .member, .memberBanned .timestamp, 
-.memberDemotedFromOperator, .memberDemotedFromOperator .member, .memberDemotedFromOperator .timestamp, 
-.memberDevoiced, .memberDevoiced .member, .memberDevoiced .timestamp, 
-.memberJoined, .memberJoined .member, .memberJoined .timestamp,
-.memberNewNickname, .memberNewNickname .member, .memberNewNickname .timestamp,
-.memberPromotedToOperator, .memberPromotedToOperator .member, .memberPromotedToOperator .timestamp, 
-.memberVoiced, .memberVoiced .member, .memberVoiced .timestamp, 
+.devoiced, .devoiced .member, .devoiced .timestamp,
+.memberBanned, .memberBanned .member, .memberBanned .timestamp,
+.memberDemotedFromOperator, .memberDemotedFromOperator .member, .memberDemotedFromOperator .timestamp,
+.memberDevoiced, .memberDevoiced .member, .memberDevoiced .timestamp,
+.memberPromotedToOperator, .memberPromotedToOperator .member, .memberPromotedToOperator .timestamp,
+.memberVoiced, .memberVoiced .member, .memberVoiced .timestamp,
 .modeChange, .modeChange .member, .modeChange .timestamp,
-.newNickname, .newNickname .member, .newNickname .timestamp, 
 .promotedToOperator, .promotedToOperator .member, .promotedToOperator .timestamp,
-.rejoined, .rejoined .member, .rejoined .timestamp, 
-.topicChanged, .topicChanged .member, .topicChanged .timestamp, 
+.topicChanged, .topicChanged .member, .topicChanged .timestamp,
 .voiced, .voiced .member, .voiced .timestamp { color:#586e75 !important; }
 
-.kicked, .kicked .member, .kicked .timestamp,	
+.memberNewNickname, .memberNewNickname .member,
+.newNickname, .newNickname .member{ color: #6c71c4 !important; }
+
+.kicked, .kicked .member, .kicked .timestamp,
 .memberKicked, .memberKicked .member, .memberKicked .timestamp,
-.memberParted, .memberParted .member, .memberParted .timestamp,
 .disconnected, .disconnected .member, .disconnected .timestamp { color:#93a1a1 !important; }
 
-.awaySet, .awaySet .member, .awaySet .timestamp, 
+.awaySet, .awaySet .member, .awaySet .timestamp,
 .awayRemoved, .awayRemoved .member, .awayRemoved .timestamp { color:#586e75 !important; }
 /* ** EVENT COLORING :: END ************************************************************* */
 
@@ -78,9 +76,9 @@ body {
 	color: #586e75;
 }
 
-.left > a.member{ color: #839496;    text-decoration:none !important; }	/* color nick for member */
+.left > a.member{ color: #cb4b16;    text-decoration:none !important; }	/* color nick for member */
 .left > a.self	{ color: #2aa198; text-decoration:none !important; }	/* color nick for user (self) */
-a.actionNick	{ color: #839496; text-decoration:none !important; }	/* color nick for actions */
+a.actionNick	{ color: #cb4b16; text-decoration:none !important; }	/* color nick for actions */
 
 .action .timestamp, .action .text { color:#839496; }
 
