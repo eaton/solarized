@@ -1,4 +1,4 @@
-/* 		
+/*
 ****************************************************************************************************************
 	Solarized - A Colloquy colored style
 	by Jeff Eaton
@@ -6,31 +6,31 @@
 
 	Solarized color scheme by Ethan Schoonover
 	http://ethanschoonover.com/solarized
-		
-	SOLARIZED HEX     TERMCOL  
-	--------- ------- -------  
-	base03    #002b36 brblack  
-	base02    #073642 black    
-	base01    #586e75 brgreen  
-	base00    #657b83 bryellow 
-	base0     #839496 brblue   
-	base1     #93a1a1 brcyan   
-	base2     #eee8d5 white    
-	base3     #fdf6e3 brwhite  
-	yellow    #b58900 yellow   
-	orange    #cb4b16 brred    
-	red       #dc322f red      
-	magenta   #d33682 magenta  
+
+	SOLARIZED HEX     TERMCOL
+	--------- ------- -------
+	base03    #002b36 brblack
+	base02    #073642 black
+	base01    #586e75 brgreen
+	base00    #657b83 bryellow
+	base0     #839496 brblue
+	base1     #93a1a1 brcyan
+	base2     #eee8d5 white
+	base3     #fdf6e3 brwhite
+	yellow    #b58900 yellow
+	orange    #cb4b16 brred
+	red       #dc322f red
+	magenta   #d33682 magenta
 	violet    #6c71c4 brmagenta
-	blue      #268bd2 blue     
-	cyan      #2aa198 cyan     
-	green     #859900 green    
+	blue      #268bd2 blue
+	cyan      #2aa198 cyan
+	green     #859900 green
 
 	Based on:
 	mIRCish - An mIRC colored style
 	by Charlie Griefer
 	http://charlie.griefer.com
-	
+
 	(meaning i started off not with a blank slate, but with Charlie's css and xls files.  thanks, Charlie!)
 ****************************************************************************************************************
 */
@@ -41,7 +41,7 @@ body {
 	background-color: #fdf6e3;
 	font: 11px "Menlo", "Andale Mono", "Courier", "Courier New", sans-serif;
 	line-height: 1.4em;
-}		
+}
 
 .envelope			{ padding: 1px 5px; }
 .envelope.highlight	{ background-color: #eee8d5; }
@@ -60,39 +60,39 @@ body {
 
 
 /* ** EVENT COLORING :: START *********************************************************** */
-.banRemoved, .banRemoved .member, .banRemoved .timestamp, 
+.banRemoved, .banRemoved .member, .banRemoved .timestamp,
 .demotedFromOperator, .demotedFromOperator .member, .demotedFromOperator .timestamp,
-.devoiced, .devoiced .member, .devoiced .timestamp, 
-.memberBanned, .memberBanned .member, .memberBanned .timestamp, 
-.memberDemotedFromOperator, .memberDemotedFromOperator .member, .memberDemotedFromOperator .timestamp, 
-.memberDevoiced, .memberDevoiced .member, .memberDevoiced .timestamp, 
+.devoiced, .devoiced .member, .devoiced .timestamp,
+.memberBanned, .memberBanned .member, .memberBanned .timestamp,
+.memberDemotedFromOperator, .memberDemotedFromOperator .member, .memberDemotedFromOperator .timestamp,
+.memberDevoiced, .memberDevoiced .member, .memberDevoiced .timestamp,
 .memberJoined, .memberJoined .member, .memberJoined .timestamp,
 .memberNewNickname, .memberNewNickname .member, .memberNewNickname .timestamp,
-.memberPromotedToOperator, .memberPromotedToOperator .member, .memberPromotedToOperator .timestamp, 
-.memberVoiced, .memberVoiced .member, .memberVoiced .timestamp, 
+.memberPromotedToOperator, .memberPromotedToOperator .member, .memberPromotedToOperator .timestamp,
+.memberVoiced, .memberVoiced .member, .memberVoiced .timestamp,
 .modeChange, .modeChange .member, .modeChange .timestamp,
-.newNickname, .newNickname .member, .newNickname .timestamp, 
+.newNickname, .newNickname .member, .newNickname .timestamp,
 .promotedToOperator, .promotedToOperator .member, .promotedToOperator .timestamp,
-.rejoined, .rejoined .member, .rejoined .timestamp, 
-.topicChanged, .topicChanged .member, .topicChanged .timestamp, 
+.rejoined, .rejoined .member, .rejoined .timestamp,
+.topicChanged, .topicChanged .member, .topicChanged .timestamp,
 .voiced, .voiced .member, .voiced .timestamp { color:#93a1a1 !important; }
 
-.kicked, .kicked .member, .kicked .timestamp,	
+.kicked, .kicked .member, .kicked .timestamp,
 .memberKicked, .memberKicked .member, .memberKicked .timestamp,
 .memberParted, .memberParted .member, .memberParted .timestamp,
 .disconnected, .disconnected .member, .disconnected .timestamp { color:#586e75 !important; }
 
-.awaySet, .awaySet .member, .awaySet .timestamp, 
+.awaySet, .awaySet .member, .awaySet .timestamp,
 .awayRemoved, .awayRemoved .member, .awayRemoved .timestamp { color:#93a1a1 !important; }
 /* ** EVENT COLORING :: END ************************************************************* */
 
 .message { margin: 0; }
-			
+
 .left {
 	float: left;
 	clear: left;
 	height: 100%;
-	margin: 0 5px 0 0;			
+	margin: 0 5px 0 0;
 	line-height: 1.4em;
 }
 
@@ -107,9 +107,9 @@ body {
 .left > .chanOp:before 		{ content: "@"; }
 .left > .chanVoice:before	{ content: "+"; }
 
-.left > .member:after, 
-.left > .self:after, 
-.left > .chanOp:after, 
+.left > .member:after,
+.left > .self:after,
+.left > .chanOp:after,
 .left > .chanVoice:after { content: ":" ;}
 
 .action a:before 			{ content: "* ";  }
@@ -119,9 +119,9 @@ body {
 a.member, a.self, a.action { text-decoration:none; }
 a.member:hover, a.self:hover, a.actionNick:hover { border-bottom-width:1px; border-bottom-style:dotted; border-bottom-color:inherit; }
 
-.left > a.member{ color: #657b83;    text-decoration:none !important; }	/* color nick for member */
+.left > a.member{ color: #cb4b16;    text-decoration:none !important; }	/* color nick for member */
 .left > a.self	{ color: #859900; text-decoration:none !important; }	/* color nick for user (self) */
-a.actionNick	{ color: #657b83; text-decoration:none !important; }	/* color nick for actions */
+a.actionNick	{ color: #cb4b16; text-decoration:none !important; }	/* color nick for actions */
 
 .action .timestamp, .action .text { color:#657b83; }
 
