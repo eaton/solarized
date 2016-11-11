@@ -11,7 +11,7 @@ Installation
 
     `git clone https://github.com/eaton/solarized.git`
 
-- Make sure Colloquy's styles directoy exists:
+- Make sure Colloquy's styles directory exists:
 
     `mkdir -p ~/Library/Application\ Support/Colloquy/Styles`
 
